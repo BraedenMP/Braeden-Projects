@@ -1,3 +1,12 @@
+
+$mainColor: #67BCDB;
+$secondaryColor: #E44424 ;
+$thirdColor: #A2AB58;
+$gray: #E8E8E8;
+
+$mainFont: 'Bree Serif', serif;
+$secondaryFont: 'Imprima', sans-serif;
+
 * {
 	box-sizing: border-box;
 }
@@ -7,30 +16,33 @@ body {
 	font: 1em;
 }
 
-a {
+a, li{
   text-decoration: none;
 }
 
-.page{
-	background: linear-gradient(0deg, #eee, #fff 10%);
+p {
+	font-family: $mainFont;
 }
 
-p, li {
-	font-family: 'Open Sans', arial;
-	line-height: 1.5;
-	color: #333;
-	font-size: 1.1em;
+
+.caption {
+	 display: none;	
+	 visibility: hidden;
 }
 
+.container{
+	max-width: 90%;
+	margin: auto;
+}
 
 /**********************************
 Header
 ***********************************/
 
 @mixin headerBackground($img){
-	background:linear-gradient(#0B486B, transparent 90%),
-			   linear-gradient(0deg, #3B8686, transparent),
-			   url("/img/#{$img}.jpg") no-repeat;
+	background:linear-gradient($mainColor, transparent 90%),
+			   linear-gradient(0deg, $secondaryColor, transparent),
+			   url("../img/#{$img}.min.jpg") no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -45,7 +57,7 @@ h1{
 	display:block;
 	margin: auto;
 	position: relative;
-	font-family: 'Roboto', sans-serif;
+	font-family: $mainFont;
 }
 
 header{
@@ -55,27 +67,28 @@ header{
 	box-shadow: 5px 0px 10px #000;
 }
 
+
 header[id="indexHead"] {
 	@include headerBackground(desk);
 }
 
-header[id="expHead"] {
-	@include headerBackground(desk);
-}
-
-header[id="placeHead"] {
-	@include headerBackground(desk);
+header[id="aboutHead"] {
+	@include headerBackground(process);
 }
 
 header[id="contactHead"]{
-	@include headerBackground(desk);	   
+	@include headerBackground(contact);	   
 }
 
 .title {
 	color: #fff;
 	font-size: 1.626em;
 	font-weight: bold;
-	font-family: 'Roboto', sans-serif;
+	font-family: $secondaryFont;
+}
+
+#indexHead {
+	margin-bottom: 5%;
 }
 
 /**********************************
@@ -102,91 +115,61 @@ nav {
    font-weight: 900;
    padding: 10px 5px;
    color: #fff;
-   font-size: 0.9em;
-   font-family: 'Roboto', sans-serif;
+   font-size: 1.3em;
+   font-family: $mainFont;
    &:hover{
-	 color: #CFF09E;
+	 color: $secondaryColor;
    }
   }
   & .selected{
-	border-bottom: solid 2px #CFF09E;
+	border-bottom: solid 2px $secondaryColor;
   }
 }
+
 
 /**********************************
 Buttons
 ***********************************/
 
-.button {       
-    display: inline-block;
-    max-width: 50%;
-    white-space: nowrap;
-    background-color: #f38630;
-    background: linear-gradient(0deg, #0B486B,#fff 70% );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eeeeee', EndColorStr='#cccccc');
-    border: 1px solid #777;
-    padding: 0 1.5em;
-    margin: 0.5em;
-    font: bold 1em/2em Arial, Helvetica;
-    text-decoration: none;
-    color: #333;
-    text-shadow: 0 1px 0 rgba(255,255,255,.8);
-    border-radius: .2em;
-    box-shadow: 0 0 1px 1px rgba(255,255,255,.8) inset, 0 1px 0 rgba(0,0,0,.3);
-    &:hover {
-	    background-color: #CFF09E;        
-	    background: linear-gradient(0deg, #0B486B,#CFF09E);
-	    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#fafafa', EndColorStr='#dddddd');        
-		}
-	&:active {
-	    box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
-	    position: relative;
-	    top: 1px;
-	}
-	&:focus {
-	    outline: 0;
-	    background: #fafafa;
-	}
-}  
 
-.picButton {
-	display: block;
-	margin-left: 20%;
-	background: linear-gradient(0deg, #fff, #0B486B 95% );
-}
+
 
 /**********************************
 Content
 ***********************************/
-
+p{
+	font-family: $secondaryFont;
+}
 
 #bio {
-	display: inline-block;
 	font-size: 1.25em;
 	line-height: 1.4;
-	width: 100%; 
-	margin: 5% 2%;
-	padding: 3.5% 5%;
+	padding: 50px;
 	& p{
 		margin-bottom: 2em;
 	}
+	& button {
+		position:center;
+		margin: auto;
+		display: block;
+	}
+}
+
+.toprow {
+		margin-top: 50px;
+		padding: 0;
 }
 
 .subTitle {
-	font-family: 'Open Sans', arial;
+	font-family: $secondaryFont;
 	font-size: 1.1em;
 	font-weight: bold;
 }
 
 .mainContent {
 	padding-top: 25px;
-	padding-bottom: 95px;
-	width: 75%;
-	margin-left: 5%;
-	margin-right: 7%;
 	margin: auto;
-	max-width: 75%;
-	font-family: 'Open Sans', arial;
+	font-family: $secondaryFont;
 }
 
 hr {
@@ -198,27 +181,103 @@ hr {
     margin-bottom: 2em;
 }
 
+.recentWork, .approach  {
+	text-align: center;
+	width: 100%; 
+	margin-top: 5%;
+	padding: 5% 10%;
+	background: $gray;
+	padding-bottom: 150px;
+	& h2 {
+		margin-bottom: 100px;
+	}
+}
+
+.approach {
+	display: block;
+	width: 100%;
+
+
+}
+.width {
+	margin:0px;
+	display: block;
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    	margin-top: 100px;
+}
+
+
+h4, h5, h6{
+	border-bottom: solid 1px $mainColor;
+	font-family: $mainFont;
+	font-size: 1.2em;
+}
+
+h1 {
+
+	font-size: 4em;
+	font-family: $mainFont;
+}
+
+h2 {
+	font-size: 2em;
+	font-family: $mainFont;
+}
+
+.contacthead {
+	margin-bottom: 10%;
+}
+
+.contactmargin {
+	margin-top: 15%;
+}
 /**********************************
 Footer
 ***********************************/
 
+.footerNav{
+	max-width: 50%;
+	display: block;
+	margin: auto;
+	margin-top: 2em;
+  & li {
+	list-style-type: none;
+	font-family: $mainFont;
+	font-size: 1.2em;
+	background: darken($mainColor, 20%);
+	& a{
+		text-decoration: none;
+		color: $secondaryColor;
+		font-size: 1.2em;
+	}
+}
+}
 
+footer{
+	padding-top: 20px;
+	padding-bottom: 5px;
+	background: $mainColor;
+	text-align: center;
+	& span {
+		float: left;
+	}
+}
+#med li{
+	list-style: none;
+	font-style: none;
+	 margin: 10px;
+	 padding: 0;
+	 float: right;
+	}
+
+#footQuote {
+	margin-top: 30px;
+}
 
 
 /**********************************
 Break Points
 ***********************************/
-@media only screen and (min-width: 950px), only screen and (min-width: 750px) and (orentation:landscape){
 
-	.mainContent{
-	width: 50%;
-	margin-left: 10%;
-	margin-right: 10%;
-	margin: auto;
-	}
-
-	#bio{
-		font-size: 1.1;
-	}
-
-}

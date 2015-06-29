@@ -3,30 +3,71 @@
 <head>
 	<meta charset="utf-8">
 	<title>Braeden Plein || Front-End Web Developer</title>
-	<caption>The perfect developer for you!</caption>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<caption></caption>
+	<link rel="stylesheet" href="mycss/normaliz.css">
+	<link href='http://fonts.googleapis.com/css?family=Bree+Serif|Imprima' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+	<link rel="stylesheet" href="mycss/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<header id="placeHead">
+	<header id="contactHead" class="jumbotron contacthead">
 		<nav>
 			<ul>
-				<li><a href="../index.html">Home</a></li>
-				<li><a href="../about.html">About</a></li>
-				<li><a href="../contact.html" class="selected">Contact</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html" class="selected">Contact</a></li>
 			</ul>
 		</nav>
-		<h1>About</h1>
+		<h1>Contact</h1>
 		<span class="title">Front-End Web Developer</span>
 	</header>
 	<div class="page">
 		<div class="mainContent">
-		
+			<div class="row content" data-equalizer>
+
+			<div id="bio" class="columns medium-6" data-equalizer-watch>
+				<h4>Contact</h4>
+				<p class="bio"> Want to get a hold of me? I am currently looking for a new journey! If you have an exciting idea that you want to make into a website using my expertise feel free to contact me. If you just want to say hi that’s okay too! 
+				<br /> Email: braeden.plein@outlook.com
+				</p>
+
+			</div>
+			
+			<div id="bio" class="medium-6 columns" data-equalizer-watch>
+				<h4>Follow Me!</h4>
+				<p class="bio"> Come check out what I'm up to right now on social media!</p>
+				<ul>
+					<li >Twitter</li>
+					<li >Facebook</li>
+					<li >LinkdIn</li>
+				</ul>
+			</div>
+		</div>
+	
+
 		</div>
 	</div>
-	<footer>
-        <p>&copy; 2015 Braeden Plein.</p>
+	<footer class="contactmargin">
+		<div class="footer">
+
+			<div id="footQuote">
+				<p>Passion, Ambition and Novel Experience</p>
+			</div>
+			<div class="row" id="med">
+				<span>
+				&copy; 2015 Braeden Plein.<br/>
+				</span>
+			</div>
+
+		</div>
     </footer>
+    <script src="js/vendor/jquery.js"></script>
+	<script src="js/vendor/fastclick.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+  $(document).foundation();
+</script>
 </body>
 </html>

@@ -3,19 +3,21 @@
 <head>
 	<meta charset="utf-8">
 	<title>Braeden Plein || Front-End Web Developer</title>
-	<caption>The perfect developer for you!</caption>
-	<link rel="stylesheet" href="mycss/normalize.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
-
+	<caption class="caption" hidden></caption>
+	<link rel="stylesheet" href="mycss/normaliz.css">
+	<link href='http://fonts.googleapis.com/css?family=Bree+Serif|Imprima' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+	<link rel="stylesheet" href="mycss/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<header id="indexHead" class="jumbotron">
-		<nav class="nav">
+		<nav class="nav nav-pills">
 			<ul>
-				<li class="nav-tabs"><a href="../index.html" class="selected">Home</a></li>
-				<li class="nav-tabs"><a href="../about.html">About</a></li>
-				<li class="nav-tabs"><a href="../contact.html">Contact</a></li>
+				<li class="nav-tabs"><a href="index.html" class="selected">Home</a></li>
+				<li class="nav-tabs"><a href="about.html">About</a></li>
+				<li class="nav-tabs"><a href="contact.html">Contact</a></li>
 			</ul>
 		</nav>
 		<h1 class="page-header">Braeden Plein</h1>
@@ -23,21 +25,64 @@
 	</header>
 	<div class="page">
 	<div class="container">
-		<div id="bio" class="col-md-3 col-sm-offset-1">
-		<h4>Bio</h4>
-		<p class="bio"> My name is Braeden Plein and I am a student. While this may be true in terms of high school, I am also a student of the internet. When I am not doing math equations or repairing computers I am learning web development.  There is just something captivating about computers that  makes me want to figure them out, and then make them do what I want. But much of this passion has been fuelled by being a Computer Technician at the University of Waterloo. The journey was long, filled with ups and downs, and spit me out a computer wizard… or so I like to think.</p>
+		<div class="row content" data-equalizer>
+
+			<div id="bio" class="columns medium-6" data-equalizer-watch>
+				<h4>Bio</h4>
+				<p class="bio"> I am a front-end web developer. I'm the guy who can put your work in front of an audience. Where I specialize in is creating simple, beautiful websites that establish brands and evoke emotion. I am passionate in making ideas come to life in the digital world. Feel free to explore my portfolio website if you are interested in learning more.</p>
+				<button class="button small round alert">More!</button>
+			</div>
+			
+			<div id="bio" class="medium-6 columns" data-equalizer-watch>
+				<h4>Skills and Abilities</h4>
+				<p class="bio"> I possess talent and passion which fuels my drive towards building successful websites. As a developer I specialize in user experience (UX), branding, SEO, and design. My focus lies in creating user friendly experiences that capture attention, and instils desire. My technical skills include HTML, CSS, and JavaScript. I am fluent in these languages and am also familiar with frameworks that surround them.</p>
+				<button type="button" class=" button small round alert">Contact!</button>
+			</div>
 		</div>
 		</div>
+		<div class="recentWork ">
+		<h2>Most Recent Work</h2>
+		<div class="showCase row">
+		 <div class="columns medium-6">
+		  	<img src="img/placeholder.jpg" alt="Barb's Beeds" class="img-thumbnail img-responsive">
+		  </div>
+		  <div class="columns medium-6">
+		  	<h3>Barb's Beeds </h3>
+		  	<p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		  </div>
+		</div>
+	</div>
 	</div>
 	<footer>
-	<div class="foot">
-		<p>
-		<span id="firstFooter">
-		&copy; 2015 Braeden Plein.<br/>
-		</span>
-		</p>
-	</div>
+		<div class="footer">
+			<div class="row">
+				<ul class="footerNav button-group even-3 round " >
+					<li class="button small"><a href="index.html" class="selected">Home</a></li>
+					<li class="button small" ><a href="about.html">About</a></li>
+					<li class="button small"><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<div id="footQuote">
+				<p>Passion, Ambition and Novel Experience </p>
+			</div>
+			<div class="row" id="med">
+				<ul>
+					<li >Twitter</li>
+					<li >Facebook</li>
+					<li >LinkdIn</li>
+				</ul>
+				<span>
+				&copy; 2015 Braeden Plein.<br/>
+				</span>
+			</div>
+
+		</div>
     </footer>
-    
+    <script src="js/vendor/jquery.js"></script>
+	<script src="js/vendor/fastclick.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+  $(document).foundation();
+</script>
 </body>
 </html>
