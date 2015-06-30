@@ -128,10 +128,22 @@ nav {
 
 
 /**********************************
-Buttons
+Skills Bar
 ***********************************/
 
+.skill{
+	list-style: none;
+	text-align: center;
+	border: 0;
+	text-decoration: none;
+	&:hover {
+		color: $secondaryColor;
+		border-bottom: solid 1px $secondaryColor;
+		transition: color 500ms ease-in-out;
+		transition: border 500ms ease-in-out;
+	}
 
+}
 
 
 /**********************************
@@ -173,12 +185,13 @@ p{
 }
 
 hr {
-	color: #0B486B;
+	color: $gray;
 	border: 0;
     height: 0; /* Firefox... */
-    box-shadow: 0 0 2px 1px #0B486B;
-    max-width: 75%;
-    margin-bottom: 2em;
+    box-shadow: 0 0 2px 1px darken($gray, 20%);
+    max-width: 20%;
+    margin: auto;
+    margin-bottom: 5em;
 }
 
 .recentWork, .approach  {
@@ -210,9 +223,16 @@ hr {
 
 
 h4, h5, h6{
-	border-bottom: solid 1px $mainColor;
 	font-family: $mainFont;
 	font-size: 1.2em;
+}
+
+h5 {
+	font-size: 1.5em;
+}
+
+h4, h6 {
+	border-bottom: solid 1px $mainColor;
 }
 
 h1 {
@@ -278,6 +298,56 @@ footer{
 
 
 /**********************************
-Break Points
+Animations
 ***********************************/
 
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInUpBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/**********************************
+Break Points
+***********************************/
