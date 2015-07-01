@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/foundation.css" />
     <script src="js/vendor/modernizr.js"></script>
 	<link rel="stylesheet" href="mycss/style.css">
+	<link rel="stylesheet" href="css/animations.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -20,14 +21,13 @@
 				<li><a href="contact.html" class="selected">Contact</a></li>
 			</ul>
 		</nav>
-		<h1>Contact</h1>
+		<h1 class="animated fadeInDown">Contact</h1>
 		<span class="title">Front-End Web Developer</span>
 	</header>
 	<div class="page">
 		<div class="mainContent">
 			<div class="row content" data-equalizer>
-
-			<div id="bio" class="columns medium-6" data-equalizer-watch>
+			<div id="bio" class="columns medium-6 animated animeLeft" data-equalizer-watch>
 				<h4>Contact</h4>
 				<p class="bio"> Want to get a hold of me? I am currently looking for a new journey! If you have an exciting idea that you want to make into a website using my expertise feel free to contact me. If you just want to say hi that’s okay too! 
 				<br /> Email: braeden.plein@outlook.com
@@ -35,13 +35,13 @@
 
 			</div>
 			
-			<div id="bio" class="medium-6 columns" data-equalizer-watch>
+			<div id="bio" class="medium-6 columns animated animeRight" data-equalizer-watch>
 				<h4>Follow Me!</h4>
 				<p class="bio"> Come check out what I'm up to right now on social media!</p>
 				<ul>
-					<li >Twitter</li>
-					<li >Facebook</li>
-					<li >LinkdIn</li>
+					<li class="animated animeRightList">Twitter</li>
+					<li class="animated animeRightList" >Facebook</li>
+					<li class="animated animeRightList" >LinkdIn</li>
 				</ul>
 			</div>
 		</div>
@@ -66,6 +66,7 @@
     <script src="js/vendor/jquery.js"></script>
 	<script src="js/vendor/fastclick.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script src="js/contact.js"></script>
     <script>
   $(document).foundation();
 </script>

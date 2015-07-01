@@ -58,6 +58,7 @@ h1{
 	margin: auto;
 	position: relative;
 	font-family: $mainFont;
+	
 }
 
 header{
@@ -320,6 +321,7 @@ Animations
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
+
   }
 
   100% {
@@ -329,24 +331,13 @@ Animations
   }
 }
 
-.fadeInUp {
+.page-header {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
+  animation-delay: 3s
 }
 
-@-webkit-keyframes fadeInUpBig {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 2000px, 0);
-    transform: translate3d(0, 2000px, 0);
-  }
 
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
 
 /**********************************
 Break Points

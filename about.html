@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/foundation.css" />
     <script src="js/vendor/modernizr.js"></script>
 	<link rel="stylesheet" href="mycss/style.css">
+	<link rel="stylesheet" href="css/animations.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -21,18 +22,20 @@
 			</ul>
 		</nav>
 		<h1>About</h1>
+		<h1 class="animated fadeInDown">About</h1>
 		<span class="title">Front-End Web Developer</span>
 	</header>
 		<div class="mainContent">
 		<div class="page">
 			<div class="row toprow content">
 				<div id="bio" class="columns medium-12">
+				<div id="bio" class="columns medium-12 who animated animeUpOne">
 					<h4>Who am I?</h4>
 					<p class="bio">I am a Canadian eh! I originally lived in a city close to Toronto, Ontario. But now I reside in a small town in West Sussex, UK. My idea of enjoying life means creating art, and doing so while exploring the world. My short term bucket list is filled with one idea; create novel experiences. This idea bleeds into my work quite often. Creating a novel, user experience means showing them something they won't find anywhere else. But  inspiration is little without ambition. My work ethic and ambition is what truly separates me from those around.  Long hours, early mornings and work intensity are a second nature to me from my upbringing. Paired with creativity and a love for technology I never had a chance, web development took me by storm and brought me right here!
 					</p>
 				</div>
 				
-				<div id="bio" class="columns medium-12">
+				<div id="bio" class="columns medium-12 what animated animeUpTwo">
 					<h4>What I Do!</h4>
 					<p class="bio"> I am fluent in website development. I create beautiful design, interactivity and do so efficiently. My technical skills are in HTML, CSS, JavaScript. On top of these skills I am a master with website optimization, search engine optimization, design foundations,  and branding. I sum these skills up into creating a user experience that turns visitors into customers, and customers into followers.</p>
 				</div>
@@ -42,21 +45,24 @@
 			<div class="row approach columns small-12" >
 				<h2>Approach</h2>
 				<div class="columns medium-6">
+				<div class="columns medium-6 animated animeLeft firstRow">
 					<h3>User First</h3>
 				  	<p> I truly believe that the user is the most important component in building a website. By reverse engineering the user's desires, goals and fears I can create an optimal experience that creates a thirst for more. 
 			  		</p>
 			  		</div>
-			  		<div class="columns medium-6">
+			  		<div class="columns medium-6 animated animeRight firstrow">
 			  		<h3>Mining for Emotion</h3>
 				  	<p> Design that can instil emotion is design that can sell your passion the way you feel it. Human's remember ideas products and brands that instil deep emotion. Human's then associate surrounding content to that emotion. It's my job to guide the user's perception and make them remember your ideas! 
 			  		</p>
 			  		</div>
 			  		<div class="columns medium-6">
+			  		<div class="columns medium-6 animated animeLeftSecond secondRow">
 			  		<h3>Uncovering Gems</h3>
 				  	<p> What is your idea if it can't be found? Leave that up to me. Your website will be optimized for search engines so the end users can discover your site with ease using related keywords and phrases. It is also paramount that your website grabs the attention of the audience right from the search engine search page. 
 			  		</p>
 			  		</div>
 			  		<div class="columns medium-6">
+			  		<div class="columns medium-6 animated animeRightSecond secondRow">
 			  		<h3>Let's Get Personal</h3>
 				  	<p> Communication is a must when working together. I believe that getting to know your vision as well as you see it can mean the difference between success and failure. This means close contact, frequent updates, and a clear understanding of the process at hand.
 			  		</p>
@@ -91,6 +97,7 @@
     <script src="js/vendor/jquery.js"></script>
 	<script src="js/vendor/fastclick.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script src="js/about.js"></script>
     <script>
   $(document).foundation();
 </script>
