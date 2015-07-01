@@ -40,6 +40,9 @@ $(window).scroll(function() {
 });
 
 
+$('.nav').sticky();
+
+
 
 
 
