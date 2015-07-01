@@ -1,13 +1,13 @@
-//Paralax affect , yet to be using it.
+//Paralax affect 
 $(window).scroll(function() {
 
 	var wScroll = $(this).scrollTop();
 
-	$('.paraOne').css({
-		'transform' : 'translate(0px,'+ wScroll /2 +'px)'
+	$('#paraOne').css({
+		'transform' : 'translate(0px, -'+ wScroll /2.5 +'px)'
 	});
 	console.log(wScroll);
-})
+});
 
 //HOME PAGE
 
@@ -38,9 +38,6 @@ $(window).scroll(function() {
 	}
 
 });
-
-
-$('.nav').sticky();
 
 
 

@@ -31,8 +31,15 @@ h1 {
   max-width: 80%;
   display: block;
   margin: auto;
-  position: relative;
   font-family: "Bree Serif", serif; }
+
+.headings {
+  position: absolute;
+  height: -50px;
+  top: 40%;
+  left: 0;
+  right: 0;
+  position: center; }
 
 header {
   height: 650px;
@@ -72,7 +79,8 @@ nav {
   padding: 10px 0;
   padding-top: 20px;
   margin-bottom: 12.5em;
-  width: 100%; }
+  width: 100%;
+  transition: 1s; }
   nav ul {
     list-style: none;
     margin: 0 10px;
@@ -82,7 +90,7 @@ nav {
     display: inline-block;
     color: #fff; }
   nav a {
-    font-weight: 900;
+    font-weight: 800;
     padding: 10px 5px;
     color: #fff;
     font-size: 1.3em;
@@ -254,6 +262,16 @@ Animations
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
   animation-delay: 3s; }
+
+.img {
+  transform: scale(1);
+  display: block; }
+  .img:hover {
+    transform: scale(1.05);
+    transition: all 0.4s ease-in-out;
+    cursor: pointer; }
+    .img:hover .imgOverLay {
+      left: 0%; }
 
 /**********************************
 Break Points
