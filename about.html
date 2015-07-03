@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Braeden Plein || Front-End Web Developer</title>
-	<caption></caption>
+	<title>Front-End Web Developer About Braeden</title>
+	<meta name="description" content="I amd a freelance front-end web developer specializing in user experience, branding, design, website optimization, and search engine optimization">
+	<meta name="keywords" content="front end, website developer, design, SEO, UX, website optimization, speed, talent, teamwork, passion, trustable, good communication, teamwork, branding">
 	<link rel="stylesheet" href="mycss/normaliz.css">
 	<link href='http://fonts.googleapis.com/css?family=Bree+Serif|Imprima' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/foundation.css" />
+	<link rel="stylesheet" href="fonts/style.css" />
     <script src="js/vendor/modernizr.js"></script>
-	<link rel="stylesheet" href="mycss/style.css">
-	<link rel="stylesheet" href="css/animations.css" />
+	<link rel="stylesheet" href="mycss/style.min.css">
+	<link rel="stylesheet" href="css/animations.min.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+<div class="animsition">
 	<header id="aboutHead" class="jumbotron">
 		<nav>
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html" class="selected">About</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="/" class="animsition-link">Home</a></li>
+				<li><a href="about.html" class="selected animsition-link">About</a></li>
+				<li><a href="contact.html" class="animsition-link">Contact</a></li>
 			</ul>
 		</nav>
+		<div class="headings" id="paraOne">
 		<h1 class="animated fadeInDown">About</h1>
 		<span class="title">Front-End Web Developer</span>
 		</div>
@@ -44,22 +47,22 @@
 			<div class="row approach columns small-12" >
 				<h2>Approach</h2>
 				<div class="columns medium-6 animated animeLeft firstRow">
-					<h3>User First</h3>
-				  	<p> I truly believe that the user is the most important component in building a website. By reverse engineering the user's desires, goals and fears I can create an optimal experience that creates a thirst for more. 
+					<h3><span class="icon-target"></span> User First</h3>
+				  	<p> I truly believe that the user is the most important component in building a website. I first discover the target audience. I then reverse engineer their desires, goals and fears to create an optimal experience, urging them to return. 
 			  		</p>
 			  		</div>
 			  		<div class="columns medium-6 animated animeRight firstrow">
-			  		<h3>Mining for Emotion</h3>
+			  		<h3><span class="icon-shocked"></span> Mining for Emotion</h3>
 				  	<p> Design that can instil emotion is design that can sell your passion the way you feel it. Human's remember ideas products and brands that instil deep emotion. Human's then associate surrounding content to that emotion. It's my job to guide the user's perception and make them remember your ideas! 
 			  		</p>
 			  		</div>
 			  		<div class="columns medium-6 animated animeLeftSecond secondRow">
-			  		<h3>Uncovering Gems</h3>
+			  		<h3><span class="icon-eye"></span> Uncovering Gems</h3>
 				  	<p> What is your idea if it can't be found? Leave that up to me. Your website will be optimized for search engines so the end users can discover your site with ease using related keywords and phrases. It is also paramount that your website grabs the attention of the audience right from the search engine search page. 
 			  		</p>
 			  		</div>
 			  		<div class="columns medium-6 animated animeRightSecond secondRow">
-			  		<h3>Let's Get Personal</h3>
+			  		<h3><span class="icon-bubbles"></span> Let's Get Personal</h3>
 				  	<p> Communication is a must when working together. I believe that getting to know your vision as well as you see it can mean the difference between success and failure. This means close contact, frequent updates, and a clear understanding of the process at hand.
 			  		</p>
 			  		</div> </div>
@@ -69,19 +72,20 @@
 		<div class="footer">
 			<div class="row">
 				<ul class="footerNav button-group even-3 round " >
-					<li class="button small"><a href="index.html" class="selected">Home</a></li>
-					<li class="button small" ><a href="about.html">About</a></li>
-					<li class="button small"><a href="contact.html">Contact</a></li>
+					<li class="button small"><a href="/" class="selected animsition-link">Home</a></li>
+					<li class="button small" ><a href="about.html" class="animsition-link">About</a></li>
+					<li class="button small"><a href="contact.html" class="animsition-link">Contact</a></li>
 				</ul>
 			</div>
-			<div id="footQuote">
-				<p>Passion, Ambition and Novel Experience</p>
-			</div>
 			<div class="row" id="med">
-				<ul>
-					<li >Twitter</li>
-					<li >Facebook</li>
-					<li >LinkdIn</li>
+				<div id="footQuote">
+				<p>Passion, Ambition and Novel Experience </p>
+			</div>
+				<ul class="footerSocial">
+					<li><a href="/" class="animsition-link"><span class="icon-linkedin social"></span></a></li>
+					<li><a href="/" class="animsition-link"><span class="icon-instagram social"></span></a></li>
+					<li><a href="/" class="animsition-link"><span class="icon-twitter2 social"></span></a></li>
+					<li><a href="/" class="animsition-link"><span class="icon-facebook2 social"></span></a></li>
 				</ul>
 				<span>
 				&copy; 2015 Braeden Plein.<br/>
@@ -89,10 +93,12 @@
 			</div>
 		</div>
     </footer>
+    </div>
     <script src="js/vendor/jquery.js"></script>
 	<script src="js/vendor/fastclick.js"></script>
     <script src="js/foundation.min.js"></script>
-    <script src="js/about.js"></script>
+    <script src="js/animsition.min.js"></script>
+    <script src="js/about.min.js"></script>
     <script>
   $(document).foundation();
 </script>

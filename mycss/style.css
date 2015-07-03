@@ -48,17 +48,17 @@ header {
   box-shadow: 5px 0px 10px #000; }
 
 header[id="indexHead"] {
-  background: linear-gradient(#67BCDB, transparent 90%), linear-gradient(0deg, #E44424, transparent), url("../img/desk.min.jpg") no-repeat;
+  background: linear-gradient(#67BCDB, transparent 90%), linear-gradient(0deg, #E44424, transparent), url("../img/desk.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed; }
 
 header[id="aboutHead"] {
-  background: linear-gradient(#67BCDB, transparent 90%), linear-gradient(0deg, #E44424, transparent), url("../img/process.min.jpg") no-repeat;
+  background: linear-gradient(#67BCDB, transparent 90%), linear-gradient(0deg, #E44424, transparent), url("../img/process.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed; }
 
 header[id="contactHead"] {
-  background: linear-gradient(#67BCDB, transparent 90%), linear-gradient(0deg, #E44424, transparent), url("../img/contact.min.jpg") no-repeat;
+  background: linear-gradient(#67BCDB, transparent 90%), linear-gradient(0deg, #E44424, transparent), url("../img/contact.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed; }
 
@@ -217,7 +217,8 @@ Footer
     .footerNav li a {
       text-decoration: none;
       color: #E44424;
-      font-size: 1.2em; }
+      font-size: 1.2em;
+      font-weight: 800; }
 
 footer {
   padding-top: 20px;
@@ -235,7 +236,26 @@ footer {
   float: right; }
 
 #footQuote {
-  margin-top: 30px; }
+  margin-top: 30px;
+  margin-bottom: -30px; }
+
+.social {
+  font-size: 1.5em;
+  color: #333; }
+  .social:hover {
+    color: #E44424;
+    cursor: pointer; }
+
+#bio .lisocial {
+  margin-bottom: .25em; }
+
+.lisocial {
+  font-size: 1em;
+  color: #333;
+  display: inline-block; }
+  .lisocial:hover {
+    color: #E44424;
+    cursor: pointer; }
 
 /**********************************
 Animations
@@ -276,5 +296,94 @@ Animations
 /**********************************
 Break Points
 ***********************************/
+/* 0, 640px */
+/* 641px, 1024px */
+/* 1025px, 1440px */
+/* 1441px, 1920px */
+/* 1921px, ... */
+/* Define mobile styles */
+@media only screen and (max-width: 40em) {
+  header[id="indexHead"] {
+    background: linear-gradient(#67BCDB, transparent 90%), linear-gradient(0deg, #E44424, transparent), url("../img/desk-small.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+
+  header[id="aboutHead"] {
+    background: linear-gradient(#67BCDB, transparent 90%), linear-gradient(0deg, #E44424, transparent), url("../img/process-small.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+
+  header[id="contactHead"] {
+    background: linear-gradient(#67BCDB, transparent 90%), linear-gradient(0deg, #E44424, transparent), url("../img/contact-small.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+
+  .skill:hover {
+    border: none; }
+
+  #footQuote, .footerSocial {
+    width: 90%;
+    text-align: center;
+    margin: 0; }
+
+  .footerNav {
+    display: none;
+    visibility: hidden; } }
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+/* min-width 641px, medium screens */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  header[id="indexHead"] {
+    background: linear-gradient(#67BCDB, transparent 90%), linear-gradient(0deg, #E44424, transparent), url("../img/desk-medium.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+
+  header[id="aboutHead"] {
+    background: linear-gradient(#67BCDB, transparent 90%), linear-gradient(0deg, #E44424, transparent), url("../img/process-medium.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+
+  header[id="contactHead"] {
+    background: linear-gradient(#67BCDB, transparent 90%), linear-gradient(0deg, #E44424, transparent), url("../img/contact-medium.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+
+  .skill {
+    margin: .25em;
+    font-size: .7em; } }
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 1025px, large screens */
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+  header[id="indexHead"] {
+    background: linear-gradient(#67BCDB, transparent 90%), linear-gradient(0deg, #E44424, transparent), url("../img/desk-large.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+
+  header[id="aboutHead"] {
+    background: linear-gradient(#67BCDB, transparent 90%), linear-gradient(0deg, #E44424, transparent), url("../img/process-large.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+
+  header[id="contactHead"] {
+    background: linear-gradient(#67BCDB, transparent 90%), linear-gradient(0deg, #E44424, transparent), url("../img/contact-large.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; } }
+/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+@media only screen and (min-width: 90.063em) {
+  header[id="indexHead"] {
+    background: linear-gradient(#67BCDB, transparent 90%), linear-gradient(0deg, #E44424, transparent), url("../img/desk-xlarge.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+
+  header[id="aboutHead"] {
+    background: linear-gradient(#67BCDB, transparent 90%), linear-gradient(0deg, #E44424, transparent), url("../img/process-xlarge.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+
+  header[id="contactHead"] {
+    background: linear-gradient(#67BCDB, transparent 90%), linear-gradient(0deg, #E44424, transparent), url("../img/contact-xlarge.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; } }
+/* min-width 1441px, xlarge screens */
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
 
 /*# sourceMappingURL=style.css.map */

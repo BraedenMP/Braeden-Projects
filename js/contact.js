@@ -1,3 +1,12 @@
+//Animsition - Adds Page Load Animation
+$(".animsition").animsition();
+
+function isMobile() {
+   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+//Checks if mobile
+if (!isMobile()) {
 //Paralax affect 
 $(window).scroll(function() {
 
@@ -35,5 +44,9 @@ $(window).scroll(function() {
 			}, 150 * (i+1));
 		});
 	}
-
 });
+
+} else {	
+	console.log('Mobile Detected, Plugins Auto Disable');
+
+}

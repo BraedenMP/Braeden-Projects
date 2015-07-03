@@ -1,4 +1,12 @@
-//Paralax affect 
+function isMobile() {
+   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+//Animsition - Adds Page Load Animation
+$(".animsition").animsition();
+
+//Checks if mobile
+if (!isMobile()) {
+ 	//Paralax affect 
 $(window).scroll(function() {
 
 	var wScroll = $(this).scrollTop();
@@ -20,7 +28,6 @@ $(window).scroll(function() {
 		$('.animeLeft').addClass('fadeInLeft');
 		$('.animeRight').addClass('fadeInRight');
 	}
-
 });
 
 //Fades Up all the skills on the skill bar at different speeds
@@ -36,8 +43,12 @@ $(window).scroll(function() {
 			}, 150 * (i+1));
 		});
 	}
-
 });
+} else {	
+	console.log('Mobile Detected, Plugins Auto Disable');
+}
+
+
 
 
 
