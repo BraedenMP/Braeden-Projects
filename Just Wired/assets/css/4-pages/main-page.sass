@@ -1,0 +1,122 @@
+$mainColor: #c44d58
+$secondaryColor: #ff6b6b 
+$thirdColor: #c7f464
+$gray: #4ecdc4
+
+$mainFont:'Raleway', sans-serif
+$secondaryFont:'Merriweather', serif
+
+
+
+//General Styles 
+
+p
+  font-family: $mainFont
+
+h2, h3, h4, h5, h6
+  font-family: $secondaryFont
+
+
+
+
+//Header Styles
+
+h1
+  font-size: 3.5rem
+  font-weight: bold
+  line-height: 1.3
+  max-width: 80%
+  display:block
+  margin: auto
+  font-family: $mainFont
+
+.title
+  display: block  
+  margin-bottom: 10px
+
+.headings
+  position: absolute
+  top: 18%
+  left: 0
+  right: 0
+  position: center
+
+
+header
+  height: 300px 
+  text-align: center
+  margin-bottom: 5%
+  margin-top: 0
+  padding: 5%
+
+
+// Products Navigation
+
+.top-bar
+  padding-top: 3px
+
+nav
+  text-align: center
+  transition: 1s
+  & ul 
+    list-style: none
+    margin: 0 10px
+    padding: 0
+    float: right
+  & li 
+    display: inline-block
+    color: #fff  
+  & a 
+    font-weight: 800
+    padding: 5px 5px
+    margin-right: 1em
+    color: #fff
+    font-size: 1.3em
+    font-family: $mainFont
+    &:hover
+      color: $mainColor
+  & .selected
+    border-bottom: solid 2px $secondaryColor
+
+
+
+// Main Page Written Content
+
+.para
+  margin-top: 20px
+
+hr
+  margin-bottom: 80px
+  color: $mainColor
+  height: 12px
+  border: 0
+  box-shadow: inset 0 12px 12px -12px $mainColor
+
+.section
+  margin-bottom: 30px  
+
+.firstRow
+  margin-bottom: 10px
+
+
+
+
+.productCategory
+  height: 100px
+  display: inline-block
+
+.necklace
+  background: $mainColor
+
+.bracelet
+  background: $secondaryColor
+
+.other
+  background: $thirdColor
+
+.gift
+  background: $gray
+
+.showcase
+  margin-bottom: 50px  
+
