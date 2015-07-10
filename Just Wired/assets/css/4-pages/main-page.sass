@@ -10,6 +10,9 @@ $secondaryFont:'Merriweather', serif
 
 //General Styles 
 
+.page
+  max-width: 99%
+
 p
   font-family: $mainFont
 
@@ -21,14 +24,28 @@ h2, h3, h4, h5, h6
 
 //Header Styles
 
+@mixin headerBackground($img)
+  background: linear-gradient(to bottom, $mainColor, transparent 0%), linear-gradient(0deg, $secondaryColor, transparent 99%), url("../img/#{$img}.jpg") no-repeat
+  background-size: cover
+  background-attachment: fixed
+
+
+header[id="mainHead"] 
+  @include headerBackground(headerJewelry)
+
+header[id="necklaceHead"] 
+  @include headerBackground(roseBeauty)  
+  
+
 h1
-  font-size: 3.5rem
-  font-weight: bold
+  font-size: 4rem
+  font-weight: 800
   line-height: 1.3
   max-width: 80%
   display:block
   margin: auto
   font-family: $mainFont
+  color: #fff
 
 .title
   display: block  
@@ -36,26 +53,31 @@ h1
 
 .headings
   position: absolute
-  top: 18%
+  top: 12em
   left: 0
   right: 0
   position: center
 
 
 header
-  height: 300px 
+  height: 42em 
   text-align: center
   margin-bottom: 5%
   margin-top: 0
-  padding: 5%
+  padding-bottom: 5%
+
+.productButton
+  font-weight: bold
+  margin-top: 1em
 
 
 // Products Navigation
 
 .top-bar
-  padding-top: 3px
+  background-color: inherit
 
-nav
+
+nav, 
   text-align: center
   transition: 1s
   & ul 
@@ -69,14 +91,21 @@ nav
   & a 
     font-weight: 800
     padding: 5px 5px
-    margin-right: 1em
+    margin-right: 2em
     color: #fff
     font-size: 1.3em
     font-family: $mainFont
     &:hover
-      color: $mainColor
+      color: $secondaryColor
   & .selected
     border-bottom: solid 2px $secondaryColor
+
+ 
+
+
+.fixed .top-bar, .productNav 
+  background: linear-gradient($mainColor, transparent 99%)
+  width: 100%
 
 
 
@@ -101,9 +130,11 @@ hr
 
 
 
-.productCategory
-  height: 100px
+.productCategory, .product
+  height: 250px
   display: inline-block
+  padding: 0.5em
+  margin-bottom: 3em
 
 .necklace
   background: $mainColor
@@ -120,3 +151,13 @@ hr
 .showcase
   margin-bottom: 50px  
 
+//Product Page
+
+.productImg
+  margin-top: 6em
+
+.productDescription
+  margin-top: 8em
+
+.productPage
+  max-width: 80%
