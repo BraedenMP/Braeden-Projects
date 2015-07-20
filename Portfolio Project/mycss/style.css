@@ -44,8 +44,7 @@ h1 {
 header {
   height: 650px;
   text-align: center;
-  padding-bottom: 30%;
-  box-shadow: 5px 0px 10px #000; }
+  padding-bottom: 30%; }
 
 header[id="indexHead"] {
   background: linear-gradient(#67BCDB, transparent 90%), linear-gradient(0deg, #E44424, transparent), url("../img/desk.jpg") no-repeat;
@@ -193,13 +192,17 @@ h1 {
 
 h2 {
   font-size: 2em;
-  font-family: "Bree Serif", serif; }
+  font-family: "Bree Serif", serif;
+  font-weight: bold; }
 
 .contacthead {
   margin-bottom: 10%; }
 
 .contactmargin {
   margin-top: 15%; }
+
+.recentContent {
+  margin-top: 2em; }
 
 /**********************************
 Footer

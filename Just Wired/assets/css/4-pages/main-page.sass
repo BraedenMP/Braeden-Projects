@@ -7,7 +7,6 @@ $mainFont:'Raleway', sans-serif
 $secondaryFont:'Merriweather', serif
 
 
-
 //General Styles 
 
 .page
@@ -17,8 +16,7 @@ p
   font-family: $mainFont
 
 h2, h3, h4, h5, h6
-  font-family: $secondaryFont
-
+  font-family: $mainFont
 
 
 
@@ -33,13 +31,23 @@ h2, h3, h4, h5, h6
 header[id="mainHead"] 
   @include headerBackground(headerJewelry)
 
-header[id="necklaceHead"] 
-  @include headerBackground(roseBeauty)  
+header[id="necklacesHead"] 
+  @include headerBackground(blueGlass) 
+
+header[id="braceletsHead"] 
+  @include headerBackground(purpleGem)
+
+header[id="giftsHead"] 
+  @include headerBackground(rose)  
+
+header[id="othersHead"] 
+  @include headerBackground(blueGem)
+  background-position-x: 80%
   
 
 h1
-  font-size: 4rem
-  font-weight: 800
+  font-size: 3.8rem
+  font-weight: 900
   line-height: 1.3
   max-width: 80%
   display:block
@@ -47,9 +55,18 @@ h1
   font-family: $mainFont
   color: #fff
 
-.title
+.titles
   display: block  
-  margin-bottom: 10px
+  font-size: 1.5em
+  font-style: italic
+  color: #fff
+  text-align: center
+  max-width: 50%
+  font-size: 1.2em
+  font-family: $secondaryFont
+  margin: auto
+  margin-bottom: 20px
+  font-weight: bold
 
 .headings
   position: absolute
@@ -76,38 +93,55 @@ header
 .top-bar
   background-color: inherit
 
+.recieptPage .top-bar
+  background-color: $secondaryColor
+  margin-bottom: 100px
 
-nav, 
+nav 
   text-align: center
   transition: 1s
   & ul 
     list-style: none
-    margin: 0 10px
+    display: inline-block
+    margin: auto 
     padding: 0
-    float: right
+    float: none
   & li 
     display: inline-block
-    color: #fff  
+    color: #fff
+    margin: auto  
   & a 
     font-weight: 800
     padding: 5px 5px
-    margin-right: 2em
     color: #fff
-    font-size: 1.3em
+    font-size: 1.2em
     font-family: $mainFont
+    display: inline-block
+    margin: auto
     &:hover
-      color: $secondaryColor
+      color: $mainColor
+      transition: all 0.3s ease-in-out
   & .selected
-    border-bottom: solid 2px $secondaryColor
+    border-bottom: solid 2px $mainColor 
 
  
-
+.top-bar .navProdLink
+  margin-left: 30%
+  margin-right: 35%
 
 .fixed .top-bar, .productNav 
-  background: linear-gradient($mainColor, transparent 99%)
+  background: linear-gradient($mainColor, transparent )
   width: 100%
 
+.navBar .row 
+  width: 100%
+  max-width: 1000em
 
+.icon
+  font-size: 1.3em
+
+.mobileNav
+  display: none  
 
 // Main Page Written Content
 
@@ -115,49 +149,474 @@ nav,
   margin-top: 20px
 
 hr
-  margin-bottom: 80px
+  margin: auto
+  margin-bottom: 6em
   color: $mainColor
   height: 12px
   border: 0
+  width: 6em
   box-shadow: inset 0 12px 12px -12px $mainColor
 
 .section
   margin-bottom: 30px  
 
 .firstRow
-  margin-bottom: 10px
-
-
-
-
-.productCategory, .product
-  height: 250px
-  display: inline-block
-  padding: 0.5em
   margin-bottom: 3em
-
-.necklace
-  background: $mainColor
-
-.bracelet
-  background: $secondaryColor
-
-.other
-  background: $thirdColor
-
-.gift
-  background: $gray
+  margin-top: 5em
 
 .showcase
   margin-bottom: 50px  
 
-//Product Page
+.wordLinks, .breadcrumb a
+  text-decoration: underline
+  color: #333
+  font-weight: bold
+  &:hover
+    color: $secondaryColor
+    transition: all 0.3s ease-in-out
 
-.productImg
-  margin-top: 6em
 
-.productDescription
-  margin-top: 8em
+
+
+//Main-Page Products
+
+
+.productCategory, 
+  height: 23em
+  display: inline-block
+  padding: 0.5em
+  margin-bottom: 3em
+  border: solid, 1px, black
+  border-radius: 50%
+
+.necklace
+  background: 
+    image: url(../img/necklace_burned.jpg)
+    position: center -90px
+    repeat: no-repeat
+    attachment: fixed
+    position-x: 20%
+
+.bracelet
+  background: 
+    image: url(../img/bracelet_burned.jpg)
+    position: center -20px
+    repeat: no-repeat
+    attachment: fixed
+    position-x: 80%
+
+
+.other
+  background: 
+    image: url(../img/otherJewelry_burned.jpg)
+    position: center 300px
+    repeat: no-repeat
+    attachment: fixed
+    position-x: 80%
+
+.gift
+  background: 
+    image: url(../img/pendant_burned.jpg)
+    position: center 350px 
+    repeat: no-repeat
+    attachment: fixed 
+    position-x: 30%           
+
+
+.window-tint
+  background-color: rgba(0,0,0,0.5)
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  opacity: 0
+
+
+.promo-text
+  color: white
+  font-weight: 500
+  font-size: 40px
+  font-family: $mainFont
+  line-height: 1.5
+
+strong
+  display: block
+  font-family: $secondaryFont
+  font-weight: 0
+  font-size: 15px
+  
+
+.title 
+  font:
+    weight: 300
+    size: 18px
+    style: italic
+  color: rgba(255,255,255,0.6)
+  margin-bottom: 25px
+
+.window-cta
+  font-size: 18px
+  text-decoration: none
+  color: white
+  border: 3px solid $mainColor
+  margin-top: 15px
+  padding: 10px 20px
+  transition: all 0.3s ease-in-out
+  &:hover
+    background: $secondaryColor
+    color: black
+
+.promo-text strong 
+  margin-bottom: 1em
+
+
+
+
+//Products Page  Create overlay later
+
+.prodOverlay 
+  background-color: rgba(265,265,265,0.5)
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  opacity: 0
+  line-height: 1.0
+  & h5, strong
+    margin: 0em
+    padding: 5em
+    position: absolute
+    display: block
+  & h5
+    left: 0
+    right: 0
+    top: 0  
+    bottom: 0
+  & strong  
+    left: 20
+    right: 0
+    top: 50  
+    bottom: 0
+
+
+.productsPage
+  width: 95%
+  & .row
+    max-width: 95%
+
+
+.products
+  margin-bottom: 100px
+
+  .product
+    height: 200px
+    display: inline-block
+    padding: 0.1em
+    margin-bottom: 5em
+    margin-top: 8em
+    border: solid, 1px, black
+    border-radius: 50%
+
+    img
+      display: block
+      transform: scale(1)
+      transition: all 0.3s ease-in-out
+
+    &:hover
+      .prodOverlay
+        opacity: 0.9
+        color: #333
+        transform: scale(1.2)
+        transition: all 0.1s ease-in-out
+
+      img
+        transform: scale(1.1)
+
+
+// Individual Product Page
 
 .productPage
   max-width: 80%
+
+.productImg  
+  margin-top: 6.5em
+  max-width: 90%
+
+.productDescription
+  margin-top: 11em  
+
+.breadcrumb  
+  font-family: $secondaryFont
+  font-size: 1em
+  margin-top: 10px
+
+
+
+
+
+//Footer
+
+
+.footer 
+  background: $secondaryColor
+  padding: 3px 5px
+  font-size: 12px
+  color: #333
+  font-family: $secondaryFont
+  display: block
+  & span
+    margin-right: 3px
+    margin-top: 5px
+  & p, & div
+    display: inline-block
+  & div
+    float: right  
+  & .wordLinks
+    text-decoration: none
+    &:hover
+      color: $mainColor
+      
+
+
+
+
+
+
+
+
+
+//Media Queries
+
+
+// Here we define the breakpoints which will become the upper border for each media size.
+// The function em-calc() calculates the em-value from a px-value.
+$small-breakpoint:  em-calc(640)  !default
+$medium-breakpoint: em-calc(1024) !default
+$large-breakpoint:  em-calc(1440) !default
+$xlarge-breakpoint: em-calc(1920) !default
+
+// Here we define the lower and upper bounds for each media size
+$small-range:   (0, $small-breakpoint) !default 
+$medium-range:  ($small-breakpoint  + em-calc(1), $medium-breakpoint) !default 
+$large-range:   ($medium-breakpoint + em-calc(1), $large-breakpoint)  !default 
+$xlarge-range:  ($large-breakpoint  + em-calc(1), $xlarge-breakpoint) !default 
+$xxlarge-range: ($xlarge-breakpoint + em-calc(1), em-calc(99999999)) !default 
+
+// Media Queries
+$screen: "only screen" !default
+
+$landscape: "#$screen and (orientation: landscape)" !default
+$portrait: "#$screen and (orientation: portrait)" !default
+
+$small-up: $screen !default
+$small-only: "#$screen and (max-width: #upper-bound($small-range))" !default
+
+$medium-up: "#$screen and (min-width:#lower-bound($medium-range))" !default
+$medium-only: "#$screen and (min-width:#lower-bound($medium-range)) and (max-width:#upper-bound($medium-range))" !default
+
+$large-up: "#$screen and (min-width:#lower-bound($large-range))" !default
+$large-only: "#$screen and (min-width:#lower-bound($large-range)) and (max-width:#upper-bound($large-range))" !default
+
+$xlarge-up: "#$screen and (min-width:#lower-bound($xlarge-range))" !default
+$xlarge-only: "#$screen and (min-width:#lower-bound($xlarge-range)) and (max-width:#upper-bound($xlarge-range))" !default
+
+$xxlarge-up: "#$screen and (min-width:#lower-bound($xxlarge-range))" !default
+$xxlarge-only: "#$screen and (min-width:#lower-bound($xxlarge-range)) and (max-width:#upper-bound($xxlarge-range))" !default
+
+$retina: "#$screen and (-webkit-min-device-pixel-ratio: 2)","#$screen and (min--moz-device-pixel-ratio: 2)","#$screen and (-o-min-device-pixel-ratio: 2/1)","#$screen and (min-device-pixel-ratio: 2)","#$screen and (min-resolution: 192dpi)","#$screen and (min-resolution: 2dppx)"
+  
+
+
+// Small Screens
+
+@media only screen and (max-width: 40em) 
+
+  header[id="mainHead"] 
+    @include headerBackground(headerJewelrySmall)
+
+  header[id="necklacesHead"] 
+    @include headerBackground(blueGlassSmall) 
+
+  header[id="braceletsHead"] 
+    @include headerBackground(purpleGem)
+
+  header[id="giftsHead"] 
+    @include headerBackground(roseSmall)  
+
+  header[id="othersHead"] 
+    @include headerBackground(blueGemSmall)       
+  
+  .productsPage .row, .product
+    max-width: 90%
+    display: relative
+    float: none
+    margin-left: 2em
+
+  nav ul li a
+    font-size: 1.2em  
+    font-weight: 800
+
+
+  .necklace
+    background: 
+      repeat: no-repeat
+      position: center
+      attachment: initial
+      position-x: -20%
+      position-y: -20%
+
+  .bracelet
+    background: 
+      repeat: no-repeat
+      position: center
+      attachment: initial
+      position-y: -20% 
+      position-x: 100%
+
+  .other
+    background: 
+      repeat: no-repeat
+      position: center
+      attachment: initial
+      position-y: -20% 
+      position-x: 100%
+
+  .gift
+    background: 
+      repeat: no-repeat
+      position: center
+      attachment: initial
+      position-x: -5%
+      position-y: 10px        
+
+  .window-tint
+    opacity: 1
+
+  .nav  
+    position: absolute
+    top: 0
+    right: 0
+    height: 40px
+    width: 40px
+    border-radius: 5px
+    -webkit-border-radius: 5px
+    -moz-border-radius: 5px
+
+  .fixed .top-bar, .productNav, .top-bar
+    background: $secondaryColor
+
+  .mobileNav
+    display: block
+
+  .normNav
+    display: none    
+
+  /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+
+
+
+// Medium Screens
+@media only screen and (min-width: 40.063em)  
+
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) 
+  header[id="mainHead"] 
+    @include headerBackground(headerJewelryMedium)
+
+  header[id="necklacesHead"] 
+    @include headerBackground(blueGlassMedium) 
+
+  header[id="braceletsHead"] 
+    @include headerBackground(purpleGemMedium)
+
+  header[id="giftsHead"] 
+    @include headerBackground(roseMedium)  
+
+  header[id="othersHead"] 
+    @include headerBackground(blueGemMedium)     
+  
+
+  .products, .product
+    max-width: 90%
+    display: relative
+    float: none
+
+  nav ul li a
+    font-size: 1.2em
+    font-weight: 800  
+ 
+
+  .necklace
+    background: 
+      position-x: -30%
+
+  .bracelet
+    background: 
+      position-x: 100%
+
+  .other
+    background: 
+      position-x: 100%
+
+  .gift
+    background: 
+      position-x: -10%
+
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+
+
+// Large screens min-width 1025px, large screens
+@media only screen and (min-width: 64.063em)   
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em)  
+  header[id="mainHead"] 
+    @include headerBackground(headerJewelryLarge)
+
+  header[id="necklacesHead"] 
+    @include headerBackground(blueGlassLarge) 
+
+  header[id="braceletsHead"] 
+    @include headerBackground(purpleGemLarge)
+
+  header[id="giftsHead"] 
+    @include headerBackground(roseLarge)  
+
+  header[id="othersHead"] 
+    @include headerBackground(blueGemLarge)   
+  
+/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+
+
+// XLarge screens
+@media only screen and (min-width: 90.063em)   
+  header[id="mainHead"] 
+    @include headerBackground(headerJewelry)
+
+  header[id="necklacesHead"] 
+    @include headerBackground(blueGlass) 
+
+  header[id="braceletsHead"] 
+    @include headerBackground(purpleGem)
+
+  header[id="giftsHead"] 
+    @include headerBackground(rose)  
+
+  header[id="othersHead"] 
+    @include headerBackground(blueGem)     
+  
+/* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em)   

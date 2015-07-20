@@ -254,6 +254,7 @@ h1 {
 h2 {
 	font-size: 2em;
 	font-family: $mainFont;
+	font-weight: bold;
 }
 
 .contacthead {
@@ -262,6 +263,10 @@ h2 {
 
 .contactmargin {
 	margin-top: 15%;
+}
+
+.recentContent{
+	margin-top: 2em
 }
 /**********************************
 Footer

@@ -12,7 +12,7 @@ $(window).scroll(function() {
 	var wScroll = $(this).scrollTop();
 
 	$('#paraOne').css({
-		'transform' : 'translate(0px, -'+ wScroll /2.5 +'px)'
+		'transform' : 'translate(0px, -'+ wScroll /2.0 +'px)'
 	});
 	console.log(wScroll);
 });
