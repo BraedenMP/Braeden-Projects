@@ -1,0 +1,519 @@
+.page {
+  max-width: 99%; }
+
+p {
+  font-family: "Raleway", sans-serif; }
+
+h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif; }
+
+header[id="mainHead"] {
+  background: linear-gradient(to bottom, #c44d58, transparent 0%), linear-gradient(0deg, #ff6b6b, transparent 99%), url("../img/headerJewelry.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+header[id="necklacesHead"] {
+  background: linear-gradient(to bottom, #c44d58, transparent 0%), linear-gradient(0deg, #ff6b6b, transparent 99%), url("../img/blueGlass.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+header[id="braceletsHead"] {
+  background: linear-gradient(to bottom, #c44d58, transparent 0%), linear-gradient(0deg, #ff6b6b, transparent 99%), url("../img/purpleGem.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+header[id="giftsHead"] {
+  background: linear-gradient(to bottom, #c44d58, transparent 0%), linear-gradient(0deg, #ff6b6b, transparent 99%), url("../img/rose.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+header[id="othersHead"] {
+  background: linear-gradient(to bottom, #c44d58, transparent 0%), linear-gradient(0deg, #ff6b6b, transparent 99%), url("../img/blueGem.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-x: 80%; }
+
+h1 {
+  font-size: 3.8rem;
+  font-weight: 900;
+  line-height: 1.3;
+  max-width: 80%;
+  margin: auto;
+  font-family: "Raleway", sans-serif;
+  color: #fff; }
+
+.titles {
+  display: block;
+  font-size: 1.5em;
+  font-style: italic;
+  color: #fff;
+  text-align: center;
+  max-width: 50%;
+  font-size: 1.2em;
+  font-family: "Merriweather", serif;
+  margin: auto;
+  margin-bottom: 20px;
+  font-weight: bold; }
+
+.headings {
+  position: absolute;
+  top: 12em;
+  left: 0;
+  right: 0;
+  position: center; }
+
+header {
+  height: 42em;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 0;
+  padding-bottom: 5%; }
+
+.productButton {
+  font-weight: bold;
+  margin-top: 1em; }
+
+.top-bar {
+  background-color: inherit; }
+
+.recieptPage .top-bar {
+  background-color: #ff6b6b;
+  margin-bottom: 100px; }
+
+nav {
+  text-align: center;
+  transition: 1s; }
+  nav ul {
+    list-style: none;
+    display: inline-block;
+    margin: auto;
+    padding: 0;
+    float: none; }
+  nav li {
+    display: inline-block;
+    color: #fff;
+    margin: auto; }
+  nav a {
+    font-weight: 800;
+    padding: 5px 5px;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: "Raleway", sans-serif;
+    display: inline-block;
+    margin: auto; }
+    nav a:hover {
+      color: #c44d58;
+      transition: all 0.3s ease-in-out; }
+  nav .selected {
+    border-bottom: solid 2px #c44d58; }
+
+.top-bar .navProdLink {
+  margin-left: 30%;
+  margin-right: 35%; }
+
+.fixed .top-bar, .productNav {
+  background: linear-gradient(#c44d58, transparent);
+  width: 100%; }
+
+.navBar .row {
+  width: 100%;
+  max-width: 1000em; }
+
+.icon {
+  font-size: 1.3em; }
+
+.mobileNav {
+  display: none; }
+
+.para {
+  margin-top: 20px; }
+
+hr {
+  margin: auto;
+  margin-bottom: 6em;
+  color: #c44d58;
+  height: 12px;
+  border: 0;
+  width: 6em;
+  box-shadow: inset 0 12px 12px -12px #c44d58; }
+
+.section {
+  margin-bottom: 30px; }
+
+.firstRow {
+  margin-bottom: 3em;
+  margin-top: 5em; }
+
+.showcase {
+  margin-bottom: 50px; }
+
+.wordLinks, .breadcrumb a {
+  text-decoration: underline;
+  color: #333;
+  font-weight: bold; }
+  .wordLinks:hover, .breadcrumb a:hover {
+    color: #ff6b6b;
+    transition: all 0.3s ease-in-out; }
+
+.productCategory {
+  height: 23em;
+  display: inline-block;
+  padding: 0.5em;
+  margin-bottom: 3em;
+  border: solid, 1px, black;
+  border-radius: 50%; }
+
+.necklace {
+  background-image: url(../img/necklace_burned.jpg);
+  background-position: center -90px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: 20%; }
+
+.bracelet {
+  background-image: url(../img/bracelet_burned.jpg);
+  background-position: center -20px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: 80%; }
+
+.other {
+  background-image: url(../img/otherJewelry_burned.jpg);
+  background-position: center 300px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: 80%; }
+
+.gift {
+  background-image: url(../img/pendant_burned.jpg);
+  background-position: center 350px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: 30%; }
+
+.window-tint {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; }
+
+.promo-text {
+  color: white;
+  font-weight: 500;
+  font-size: 40px;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5; }
+
+strong {
+  display: block;
+  font-family: "Merriweather", serif;
+  font-weight: 0;
+  font-size: 15px; }
+
+.title {
+  font-weight: 300;
+  font-size: 18px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 25px; }
+
+.window-cta {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  border: 3px solid #c44d58;
+  margin-top: 15px;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out; }
+  .window-cta:hover {
+    background: #ff6b6b;
+    color: black; }
+
+.promo-text strong {
+  margin-bottom: 1em; }
+
+.prodOverlay {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  line-height: 1; }
+  .prodOverlay h5, .prodOverlay strong {
+    margin: 0em;
+    padding: 5em;
+    position: absolute;
+    display: block; }
+  .prodOverlay h5 {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; }
+  .prodOverlay strong {
+    left: 20;
+    right: 0;
+    top: 50;
+    bottom: 0; }
+
+.productsPage {
+  width: 95%; }
+  .productsPage .row {
+    max-width: 95%; }
+
+.products {
+  margin-bottom: 100px; }
+  .products .product {
+    height: 200px;
+    display: inline-block;
+    padding: 0.1em;
+    margin-bottom: 5em;
+    margin-top: 8em;
+    border: solid, 1px, black;
+    border-radius: 50%; }
+    .products .product img {
+      display: block;
+      transform: scale(1);
+      transition: all 0.3s ease-in-out; }
+    .products .product:hover .prodOverlay {
+      opacity: 0.9;
+      color: #333;
+      transform: scale(1.2);
+      transition: all 0.1s ease-in-out; }
+    .products .product:hover img {
+      transform: scale(1.1); }
+
+.productPage {
+  max-width: 80%; }
+
+.productImg {
+  margin-top: 6.5em;
+  max-width: 90%; }
+
+.productDescription {
+  margin-top: 11em; }
+
+.breadcrumb {
+  font-family: "Merriweather", serif;
+  font-size: 1em;
+  margin-top: 10px; }
+
+.footer {
+  background: #ff6b6b;
+  padding: 3px 5px;
+  font-size: 12px;
+  color: #333;
+  font-family: "Merriweather", serif;
+  display: block; }
+  .footer span {
+    margin-right: 3px;
+    margin-top: 5px; }
+  .footer p, .footer div {
+    display: inline-block; }
+  .footer div {
+    float: right; }
+  .footer .wordLinks {
+    text-decoration: none; }
+    .footer .wordLinks:hover {
+      color: #c44d58; }
+
+@media only screen and (max-width: 40em) {
+  header[id="mainHead"] {
+    background: linear-gradient(to bottom, #c44d58, transparent 0%), linear-gradient(0deg, #ff6b6b, transparent 99%), url("../img/headerJewelrySmall.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+
+  header[id="necklacesHead"] {
+    background: linear-gradient(to bottom, #c44d58, transparent 0%), linear-gradient(0deg, #ff6b6b, transparent 99%), url("../img/blueGlassSmall.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+
+  header[id="braceletsHead"] {
+    background: linear-gradient(to bottom, #c44d58, transparent 0%), linear-gradient(0deg, #ff6b6b, transparent 99%), url("../img/purpleGem.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+
+  header[id="giftsHead"] {
+    background: linear-gradient(to bottom, #c44d58, transparent 0%), linear-gradient(0deg, #ff6b6b, transparent 99%), url("../img/roseSmall.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+
+  header[id="othersHead"] {
+    background: linear-gradient(to bottom, #c44d58, transparent 0%), linear-gradient(0deg, #ff6b6b, transparent 99%), url("../img/blueGemSmall.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+
+  .productsPage .row, .product {
+    max-width: 90%;
+    display: relative;
+    float: none;
+    margin-left: 2em; }
+
+  nav ul li a {
+    font-size: 1.2em;
+    font-weight: 800; }
+
+  .necklace {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: initial;
+    background-position-x: -20%;
+    background-position-y: -20%; }
+
+  .bracelet {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: initial;
+    background-position-y: -20%;
+    background-position-x: 100%; }
+
+  .other {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: initial;
+    background-position-y: -20%;
+    background-position-x: 100%; }
+
+  .gift {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: initial;
+    background-position-x: -5%;
+    background-position-y: 10px; }
+
+  .window-tint {
+    opacity: 1; }
+
+  .nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px; }
+
+  .fixed .top-bar, .productNav, .top-bar {
+    background: #ff6b6b; }
+
+  .mobileNav {
+    display: block; }
+
+  .normNav {
+    display: none; }
+
+  /* max-width 640px, mobile-only styles, use when QAing mobile issues */ }
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  header[id="mainHead"] {
+    background: linear-gradient(to bottom, #c44d58, transparent 0%), linear-gradient(0deg, #ff6b6b, transparent 99%), url("../img/headerJewelryMedium.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+
+  header[id="necklacesHead"] {
+    background: linear-gradient(to bottom, #c44d58, transparent 0%), linear-gradient(0deg, #ff6b6b, transparent 99%), url("../img/blueGlassMedium.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+
+  header[id="braceletsHead"] {
+    background: linear-gradient(to bottom, #c44d58, transparent 0%), linear-gradient(0deg, #ff6b6b, transparent 99%), url("../img/purpleGemMedium.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+
+  header[id="giftsHead"] {
+    background: linear-gradient(to bottom, #c44d58, transparent 0%), linear-gradient(0deg, #ff6b6b, transparent 99%), url("../img/roseMedium.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+
+  header[id="othersHead"] {
+    background: linear-gradient(to bottom, #c44d58, transparent 0%), linear-gradient(0deg, #ff6b6b, transparent 99%), url("../img/blueGemMedium.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+
+  .products, .product {
+    max-width: 90%;
+    display: relative;
+    float: none; }
+
+  nav ul li a {
+    font-size: 1.2em;
+    font-weight: 800; }
+
+  .necklace {
+    background-position-x: -30%; }
+
+  .bracelet {
+    background-position-x: 100%; }
+
+  .other {
+    background-position-x: 100%; }
+
+  .gift {
+    background-position-x: -10%; } }
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+  header[id="mainHead"] {
+    background: linear-gradient(to bottom, #c44d58, transparent 0%), linear-gradient(0deg, #ff6b6b, transparent 99%), url("../img/headerJewelryLarge.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+
+  header[id="necklacesHead"] {
+    background: linear-gradient(to bottom, #c44d58, transparent 0%), linear-gradient(0deg, #ff6b6b, transparent 99%), url("../img/blueGlassLarge.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+
+  header[id="braceletsHead"] {
+    background: linear-gradient(to bottom, #c44d58, transparent 0%), linear-gradient(0deg, #ff6b6b, transparent 99%), url("../img/purpleGemLarge.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+
+  header[id="giftsHead"] {
+    background: linear-gradient(to bottom, #c44d58, transparent 0%), linear-gradient(0deg, #ff6b6b, transparent 99%), url("../img/roseLarge.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+
+  header[id="othersHead"] {
+    background: linear-gradient(to bottom, #c44d58, transparent 0%), linear-gradient(0deg, #ff6b6b, transparent 99%), url("../img/blueGemLarge.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; } }
+/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+@media only screen and (min-width: 90.063em) {
+  header[id="mainHead"] {
+    background: linear-gradient(to bottom, #c44d58, transparent 0%), linear-gradient(0deg, #ff6b6b, transparent 99%), url("../img/headerJewelry.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+
+  header[id="necklacesHead"] {
+    background: linear-gradient(to bottom, #c44d58, transparent 0%), linear-gradient(0deg, #ff6b6b, transparent 99%), url("../img/blueGlass.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+
+  header[id="braceletsHead"] {
+    background: linear-gradient(to bottom, #c44d58, transparent 0%), linear-gradient(0deg, #ff6b6b, transparent 99%), url("../img/purpleGem.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+
+  header[id="giftsHead"] {
+    background: linear-gradient(to bottom, #c44d58, transparent 0%), linear-gradient(0deg, #ff6b6b, transparent 99%), url("../img/rose.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+
+  header[id="othersHead"] {
+    background: linear-gradient(to bottom, #c44d58, transparent 0%), linear-gradient(0deg, #ff6b6b, transparent 99%), url("../img/blueGem.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed; } }
+/* min-width 1441px, xlarge screens */
+
+/*# sourceMappingURL=main-page.css.map */

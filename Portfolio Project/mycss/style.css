@@ -202,7 +202,12 @@ h2 {
   margin-top: 15%; }
 
 .recentContent {
-  margin-top: 2em; }
+  margin-top: 0em; }
+
+u:hover {
+  color: #E44424;
+  transition: color 500ms ease-in-out;
+  transition: border 500ms ease-in-out; }
 
 /**********************************
 Footer
@@ -331,7 +336,14 @@ Break Points
 
   .footerNav {
     display: none;
-    visibility: hidden; } }
+    visibility: hidden; }
+
+  .recentContent {
+    margin-top: 20px; }
+
+  .imgHolder {
+    margin-top: -40px;
+    margin-bottom: 60px; } }
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 /* min-width 641px, medium screens */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {

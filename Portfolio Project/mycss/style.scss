@@ -266,7 +266,13 @@ h2 {
 }
 
 .recentContent{
-	margin-top: 2em
+	margin-top: 0em
+}
+
+u:hover {
+	color: $secondaryColor;
+	transition: color 500ms ease-in-out;
+	transition: border 500ms ease-in-out;
 }
 /**********************************
 Footer
@@ -472,6 +478,15 @@ $retina: (
 	.footerNav {
 	display: none;
 		visibility: hidden;
+	}
+
+	.recentContent{
+		margin-top: 20px;
+	}
+
+	.imgHolder {
+  	  margin-top: -40px;
+  	  margin-bottom: 60px;
 	}
 
  } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
